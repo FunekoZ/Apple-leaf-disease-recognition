@@ -28,7 +28,7 @@
 - 使用管理员权限安装，一路默认。
 - 安装完成之后打开命令行，输入 `nvcc -V` 查看版本，表示安装成功。
 
-![CUDA安装成功](图片URL)
+![CUDA安装成功](Apple-leaf-disease-recognition/Image-foder/1.png)
 
 #### cuDNN
 
