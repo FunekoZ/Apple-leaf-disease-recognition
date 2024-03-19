@@ -34,30 +34,47 @@
 
 ![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/2.png) <!-- 图 2 验证是否成功安装 -->
 
+安装成功后，我的电脑上点右键，打开属性->高级系统设置->环境变量，可以看到系统中多了 `CUDA_PATH` 和 `CUDA_PATH_V9_0` 两个环境变量。
+
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/3.png) <!-- 图 3 环境变量 -->
+
+我们还需要添加如下几个变量，在系统变量中添加如下几个变量：
+
+- `CUDA_SDK_PATH = C:\ProgramData\NVIDIACorporation\CUDA Samples\v9.0`
+- `CUDA_LIB_PATH = %CUDA_PATH%\lib\x64`
+- `CUDA_BIN_PATH = %CUDA_PATH%\bin`
+- `CUDA_SDK_BIN_PATH = %CUDA_SDK_PATH%\bin\win64`
+- `CUDA_SDK_LIB_PATH = %CUDA_SDK_PATH%\common\lib\x64`
+
+设置完成之后，我们可以打开命令行来查看。
+
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/4.png) <!-- 图 4 查看路径 -->
+
 #### cuDNN
 
 选择对应的版本下载，解压 zip，将文件夹里的内容拷贝到 CUDA 的安装目录并覆盖相应的文件夹。
-
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/3.png) <!-- 图 5 CUDNN 下载 -->
 
 #### Anaconda
 
 选择相应的版本下载，安装过程中选择“加入到系统 PATH 环境变量”。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/4.png) <!-- 图 6 Anaconda 下载 -->
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/5.png) <!-- 图 7 添加进入环境变量 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/5.png) <!-- 图 5 Anaconda 下载 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/6.png) <!-- 图 6 添加进入环境变量 -->
 
 #### Python
 
 官网下载 Python3.6.9 安装，安装的时候勾选“Add Python 3.6 to PATH”选项。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/6.png) <!-- 图 8 python 下载 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/7.png) <!-- 图 7 python 下载 -->
 
-### TensorFlow
+#### TensorFlow
 
 管理员模式打开命令行，输入命令 `pip install tensorflow-gpu`。如果选择安装 cpu 版本，命令：`pip install tensorflow`。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/7.png) <!-- 图 10 安装成功 -->
+安装完成后命令行输入：`python`，进入 python 编辑环境，然后输入命令：`import tensorflow as tf`，如果没有报错，则表示安装成功。
+
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/8.png) <!-- 图 8 激活 TensorFlow 环境 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/9.png) <!-- 图 9 安装成功 -->
 
 ## 三、算法说明
 
@@ -75,10 +92,10 @@
 
 运行过程中会显示详细损失率以及正确率。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/8.png) <!-- 图 11 运行环境 -->
-
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/9.png) <!-- 图 12 训练过程 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/10.png) <!-- 图 10 运行环境 -->
 
 训练完成后即可进行测试，测试输出的混淆矩阵。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/10.png) <!-- 图 13 测试集结果 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/11.png) <!-- 图 11 训练过程 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/12.png) <!-- 图 12 测试输出的混淆矩阵 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/13.png) <!-- 图 13 测试集结果 -->
