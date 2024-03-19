@@ -24,35 +24,40 @@
 
 #### CUDA
 
-- 选择相对应的版本下载，在线安装版和离线安装版均可。先安装基础包，再安装升级补丁。
-- 使用管理员权限安装，一路默认。
-- 安装完成之后打开命令行，输入 `nvcc -V` 查看版本，表示安装成功。
+选择相对应的版本下载，在线安装版和离线安装版均可。先安装基础包，再安装升级补丁。
 
-![CUDA安装成功](https://github.com/FunekoZ/Apple-leaf-disease-recognition/tree/main/Image-foder/1.png)
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/1.png) <!-- 图 1 选择对应版本的 CUDA 并下载 -->
+
+使用管理员权限安装，一路默认。
+
+安装完成之后打开命令行，输入 `nvcc -V` 查看版本，表示安装成功。
+
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/2.png) <!-- 图 2 验证是否成功安装 -->
 
 #### cuDNN
 
-- 选择对应的版本下载，解压 zip，将文件夹里的内容拷贝到 CUDA 的安装目录并覆盖相应的文件夹。
+选择对应的版本下载，解压 zip，将文件夹里的内容拷贝到 CUDA 的安装目录并覆盖相应的文件夹。
 
-![cuDNN下载](图片URL)
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/3.png) <!-- 图 5 CUDNN 下载 -->
 
 #### Anaconda
 
-- 选择相应的版本下载，安装过程中选择“加入到系统 PATH 环境变量”。
+选择相应的版本下载，安装过程中选择“加入到系统 PATH 环境变量”。
 
-![Anaconda下载](图片URL)
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/4.png) <!-- 图 6 Anaconda 下载 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/5.png) <!-- 图 7 添加进入环境变量 -->
 
 #### Python
 
-- 官网下载 Python3.6.9 安装，安装的时候勾选“Add Python 3.6 to PATH”选项。
+官网下载 Python3.6.9 安装，安装的时候勾选“Add Python 3.6 to PATH”选项。
 
-![Python下载](图片URL)
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/6.png) <!-- 图 8 python 下载 -->
 
 ### TensorFlow
 
-- 管理员模式打开命令行，输入命令 `pip install tensorflow-gpu`。如果选择安装 cpu 版本，命令：`pip install tensorflow`。
+管理员模式打开命令行，输入命令 `pip install tensorflow-gpu`。如果选择安装 cpu 版本，命令：`pip install tensorflow`。
 
-![TensorFlow安装](图片URL)
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/7.png) <!-- 图 10 安装成功 -->
 
 ## 三、算法说明
 
@@ -62,7 +67,19 @@
 - **train.py**：用于训练模型，最终得到训练权重文件。
 - **test.py**：用于后续训练好的模型的测试工作，测试集中的图像，并将结果以混淆矩阵形式呈现。
 
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/8.png) <!-- 图 11 运行环境 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/9.png) <!-- 图 12 训练过程 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/10.png) <!-- 图 13 测试集结果 -->
+
 ## 四、演示
 
 - 打开 Pycharm 软件，运行 train.py 代码，可以根据控制台输出及时调整超参数。
-- 运行过程中会显示详细损失率以及正确率
+
+运行过程中会显示详细损失率以及正确率。
+
+训练完成后即可进行测试，测试输出的混淆矩阵。
+
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/11.png) <!-- 示例图：Pycharm软件界面 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/12.png) <!-- 示例图：训练详细损失率和正确率 -->
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/13.png) <!-- 示例图：测试输出的混淆矩阵 -->
+
