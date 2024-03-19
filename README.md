@@ -17,7 +17,7 @@
 
 - **CUDA9.0 官网下载地址**：[CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
 - **CUDNN10.0 官网下载地址（需要注册）**：[cuDNN Download](https://developer.nvidia.com/rdp/cudnn-download)
-- **Anacoda5.2 官网下载地址**：[Anaconda Download](https://www.anaconda.com/download/)
+- **Anaconda5.2 官网下载地址**：[Anaconda Download](https://www.anaconda.com/download/)
 - **Python3.6.9 官网下载地址**：[Python Release 3.6.9](https://www.python.org/downloads/release/python-369/)
 
 ### 2. 安装过程
@@ -63,23 +63,22 @@
 
 ### 1. 训练模型代码说明
 
+代码结构分为三大模块，分别为 `dataloader.py`，`train.py`，`test.py`。
+
 - **dataloader.py**：用于图片的预处理和模型的构建工作。
 - **train.py**：用于训练模型，最终得到训练权重文件。
 - **test.py**：用于后续训练好的模型的测试工作，测试集中的图像，并将结果以混淆矩阵形式呈现。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/8.png) <!-- 图 11 运行环境 -->
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/9.png) <!-- 图 12 训练过程 -->
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/10.png) <!-- 图 13 测试集结果 -->
-
 ## 四、演示
 
-- 打开 Pycharm 软件，运行 train.py 代码，可以根据控制台输出及时调整超参数。
+打开 Pycharm 软件，运行 `train.py` 代码，可以根据控制台输出及时调整超参数。
 
 运行过程中会显示详细损失率以及正确率。
 
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/8.png) <!-- 图 11 运行环境 -->
+
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/9.png) <!-- 图 12 训练过程 -->
+
 训练完成后即可进行测试，测试输出的混淆矩阵。
 
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/11.png) <!-- 示例图：Pycharm软件界面 -->
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/12.png) <!-- 示例图：训练详细损失率和正确率 -->
-![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/13.png) <!-- 示例图：测试输出的混淆矩阵 -->
-
+![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/10.png) <!-- 图 13 测试集结果 -->
