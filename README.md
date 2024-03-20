@@ -63,7 +63,9 @@
 #### cuDNN
 
 选择对应的版本下载，解压 zip，将文件夹里的内容拷贝到 CUDA 的安装目录并覆盖相应的文件夹。CUDA 默认安装目录：
-- `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0`
+- `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0`
+
+（图片中是旧版9.0，要下载适配10.0版本的）
 
 ![](https://github.com/FunekoZ/Apple-leaf-disease-recognition/blob/main/Image-foder/5.png) <!-- 图 5 cuDNN 下载 -->
 
