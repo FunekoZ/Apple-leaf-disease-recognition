@@ -25,8 +25,8 @@
 
 ### 1. 文件下载
 
-- **CUDA9.0 官网下载地址**：[CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
-- **CUDNN10.0 官网下载地址（需要注册）**：[cuDNN Download](https://developer.nvidia.com/rdp/cudnn-download)
+- **CUDA10.0 官网下载地址**：[CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
+- **CUDNN7.4.x 官网下载地址（需要注册）**：[cuDNN Download](https://developer.nvidia.com/rdp/cudnn-download)
 - **Anaconda5.2 官网下载地址**：[Anaconda Download](https://www.anaconda.com/download/)
 - **Python3.6.9 官网下载地址**：[Python Release 3.6.9](https://www.python.org/downloads/release/python-369/)
 
